@@ -28,7 +28,7 @@ Route::get('/home', function () {
         return redirect()->route('login');
     }
     return app()->call('App\Http\Controllers\AdminController@index');
-})->name('landing');
+})->name('home');
 
 /*
 |--------------------------------------------------------------------------
